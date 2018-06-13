@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using NetCore_webapi_efcore.Models.DB;
 
 namespace NetCore_webapi_efcore.Controllers
 {
@@ -12,9 +14,31 @@ namespace NetCore_webapi_efcore.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
-        {
-            return new string[] { "value1", "value2" };
+        public IActionResult Get()
+        {//IActionResult  IHttpActionResult
+            try
+            {
+                using (var db = new TrainWebAPIContext())
+                {
+                    // db.Configuration.ProxyCreationEnabled = false;
+
+                    var resultModel = db.Departments.ToList();
+
+                    if (resultModel == null)
+                    {
+                        return NotFound();
+                    }
+
+                    return Ok(resultModel);
+                }
+            }
+            catch (Exception e)
+            {
+                // log.Error(e); 
+                // return StatusCode(StatusCode.Status500InternalServerError);
+                return StatusCode(500);
+                //  ("มีปัญหาภายในฟังก์ชั่นการทำงานของ Get Department");
+            }
         }
 
         // GET api/values/5
