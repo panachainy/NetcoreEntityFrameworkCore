@@ -21,7 +21,6 @@ namespace NetCore_webapi_efcore.Controllers
                 using (var db = new TrainWebAPIContext())
                 {
                     // db.Configuration.ProxyCreationEnabled = false;
-
                     var resultModel = db.Departments.ToList();
 
                     if (resultModel == null)
