@@ -69,3 +69,9 @@ dotnet ef migrations remove
 
 
 * [SQLSERVER 2008](https://blogs.msdn.microsoft.com/walzenbach/2010/04/14/how-to-enable-remote-connections-in-sql-server-2008/) - Fix Remote Local
+
+## Contact ME
+* [Medium](https://medium.com/@panachai.ny) - Blog
+* [Github](https://github.com/panachai) - Repository Public
+* [Facebook](https://www.facebook.com/panachaiNY) - Social
+* [Gmail](https://mail.google.com/mail?view=cm&tf=0+&to=panachai.ny@gmail.com+&su=Contact from Github+&body=ใส่เนื้อหา) - panachai.ny@gmail.com
