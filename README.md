@@ -1,15 +1,25 @@
 TrainNetCore2_1
-#DotNetCore 2.1 
-##General Command 
+# DotNetCore 2.1 
+## General Command 
 create -> dotnet new mvc
  
-##Nuget 
-EF Core -> dotnet add package Microsoft.EntityFrameworkCore.Tools.DotNet 
-EF Core Design -> dotnet add package Microsoft.EntityFrameworkCore.Design 
+## Nuget
+
+### EF Core
+```
+dotnet add package Microsoft.EntityFrameworkCore.Tools.DotNet 
+```
+### EF Core Design
+```
+dotnet add package Microsoft.EntityFrameworkCore.Design
+```
  
-EF Resotre อัพเดทหลังเพิ่ม Package -> dotnet restore 
- 
-##Entity Framwork Core 2.1 Command 
+### EF Resotre อัพเดทหลังเพิ่ม Package
+```
+dotnet restore 
+```
+
+## Entity Framwork Core 2.1 Command 
 เชื่อม Database with vscode efcore{ 
 //แบบปกติ 
 -> dotnet ef dbcontext scaffold "Server=DESKTOP-ASDASD\SQLEXPRESS;Database=TEST;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models 
@@ -32,5 +42,5 @@ update ef -> dotnet ef database update
 Roleback efcore (ย้อนกลับไป Migrate ที่ต้องการ) -> dotnet ef database update _______ //ชื่อ Migrate ที่ตั้งไว้ 
 Delete Migration (ตัวล่าสุด)-> dotnet ef migrations remove
 
-##FIX SQL SERVER
+## FIX SQL SERVER
 https://blogs.msdn.microsoft.com/walzenbach/2010/04/14/how-to-enable-remote-connections-in-sql-server-2008/
