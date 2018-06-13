@@ -66,4 +66,6 @@ dotnet ef migrations remove
 ```
 
 ## FIX SQL SERVER
-https://blogs.msdn.microsoft.com/walzenbach/2010/04/14/how-to-enable-remote-connections-in-sql-server-2008/
+
+
+* [SQLSERVER 2008](https://blogs.msdn.microsoft.com/walzenbach/2010/04/14/how-to-enable-remote-connections-in-sql-server-2008/) - Fix Remote Local
