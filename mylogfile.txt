@@ -1,0 +1,20 @@
+2018-06-14 21:12:51.970 +07:00 [FTL] asd
+2018-06-14 21:12:51.986 +07:00 [ERR] Asda
+2018-06-14 21:12:51.988 +07:00 [INF] Sdsd
+2018-06-14 21:12:51.990 +07:00 [WRN] Asdasd
+2018-06-14 21:12:52.695 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2018-06-14 21:12:52.748 +07:00 [INF] Request finished in 41.4552ms 307 
+2018-06-14 21:12:52.777 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2018-06-14 21:12:53.169 +07:00 [INF] Request finished in 216.4277ms 404 
+2018-06-14 21:15:55.427 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2018-06-14 21:15:55.501 +07:00 [INF] Request finished in 45.1867ms 307 
+2018-06-14 21:15:55.512 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2018-06-14 21:15:55.683 +07:00 [INF] Request finished in 147.8666ms 404 
+2018-06-14 21:16:04.573 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values  
+2018-06-14 21:16:04.668 +07:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action NetCore_webapi_efcore.Controllers.ValuesController.Get (NetCore_webapi_efcore)
+2018-06-14 21:16:04.682 +07:00 [INF] Executing action method NetCore_webapi_efcore.Controllers.ValuesController.Get (NetCore_webapi_efcore) - Validation state: "Valid"
+2018-06-14 21:16:08.795 +07:00 [INF] Getting all Departments at "2018-06-14T21:16:08.7912002+07:00"
+2018-06-14 21:16:09.336 +07:00 [INF] Executed action method NetCore_webapi_efcore.Controllers.ValuesController.Get (NetCore_webapi_efcore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4646.0828ms.
+2018-06-14 21:16:09.348 +07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCore_webapi_efcore.Models.DB.Departments, NetCore_webapi_efcore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-06-14 21:16:09.448 +07:00 [INF] Executed action NetCore_webapi_efcore.Controllers.ValuesController.Get (NetCore_webapi_efcore) in 4766.0043000000005ms
+2018-06-14 21:16:09.456 +07:00 [INF] Request finished in 4885.9248ms 200 application/json; charset=utf-8

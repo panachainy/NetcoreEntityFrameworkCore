@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using NetCore_webapi_efcore.Models.DB;
 
 namespace NetCore_webapi_efcore.Controllers
@@ -12,6 +13,13 @@ namespace NetCore_webapi_efcore.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private readonly ILogger _logger;
+        public ValuesController(ILoggerFactory logger)
+        {
+            // _logger = logger.CreateLogger("NetCore_webapi_efcore.Controllers.ValuesController");
+            _logger = logger.CreateLogger<ValuesController>();
+        }
+
         // GET api/values
         [HttpGet]
         public IActionResult Get()
@@ -20,7 +28,9 @@ namespace NetCore_webapi_efcore.Controllers
             {
                 using (var db = new TrainWebAPIContext())
                 {
-                    // db.Configuration.ProxyCreationEnabled = false;
+
+                    // _logger.LogInformation(
+                    //  "Getting all Departments at {RequestTime}", DateTime.Now);
                     var resultModel = db.Departments.ToList();
 
                     if (resultModel == null)
@@ -33,7 +43,7 @@ namespace NetCore_webapi_efcore.Controllers
             }
             catch (Exception e)
             {
-                // log.Error(e); 
+                _logger.LogError(e + "");
                 // return StatusCode(StatusCode.Status500InternalServerError);
                 return StatusCode(500);
                 //  ("มีปัญหาภายในฟังก์ชั่นการทำงานของ Get Department");

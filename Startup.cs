@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
@@ -10,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Serilog;
 
 namespace NetCore_webapi_efcore
 {
@@ -29,8 +31,26 @@ namespace NetCore_webapi_efcore
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            //-----------------
+            var logFile = Path.Combine(env.ContentRootPath, "mylogfile.txt");
+            //create log file
+            Log.Logger = new LoggerConfiguration().WriteTo.File(logFile).CreateLogger();
+            //-----------------
+            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+            loggerFactory.AddDebug();
+            loggerFactory.AddSerilog();
+            //-----------------
+
+            // var starterlog = loggerFactory.CreateLogger<Startup>();
+            // starterlog.LogCritical("asd");
+            // starterlog.LogDebug("sdsd");
+            // starterlog.LogError("Asda");
+            // starterlog.LogInformation("Sdsd");
+            // starterlog.LogWarning("Asdasd");
+            //--
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

@@ -25,7 +25,7 @@ namespace NetCore_webapi_efcore.Controllers
         {
             try
             {
-                _logger.LogDebug("test log get");
+                // _logger.LogDebug("test log get");
                 return Ok("asdasd");
             }
             catch (Exception)
