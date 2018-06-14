@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "d8488e2cba39c6e9a0bd6e03625d6769f2afa45a"
+    "signature": "968fed5dcee857548dacbad70001921af6b902b4"
   },
   "compilationOptions": {
     "defines": [
@@ -27,7 +27,10 @@
           "Microsoft.AspNetCore.App": "2.1.0",
           "Microsoft.EntityFrameworkCore.Tools.DotNet": "2.1.0-preview1-final",
           "Microsoft.NETCore.App": "2.1.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Tools": "2.1.0-preview1-final"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Tools": "2.1.0-preview1-final",
+          "Serilog": "2.7.2-dev-01005",
+          "Serilog.Extensions.Logging": "2.0.2",
+          "Serilog.Sinks.File": "4.0.1-dev-00796"
         },
         "runtime": {
           "NetCore_webapi_efcore.dll": {}
@@ -481,6 +484,57 @@
         },
         "compile": {
           "lib/netstandard1.3/NuGet.Frameworks.dll": {}
+        }
+      },
+      "Serilog/2.7.2-dev-01005": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "System.Collections.NonGeneric": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Serilog.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.7.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Serilog.dll": {}
+        }
+      },
+      "Serilog.Extensions.Logging/2.0.2": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "2.1.0",
+          "Serilog": "2.7.2-dev-01005"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Extensions.Logging.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Extensions.Logging.dll": {}
+        }
+      },
+      "Serilog.Sinks.File/4.0.1-dev-00796": {
+        "dependencies": {
+          "Serilog": "2.7.2-dev-01005",
+          "System.IO": "4.3.0",
+          "System.IO.FileSystem": "4.3.0",
+          "System.IO.FileSystem.Primitives": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Text.Encoding.Extensions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Timer": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Serilog.Sinks.File.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "4.0.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Serilog.Sinks.File.dll": {}
         }
       },
       "System.Diagnostics.Process/4.1.0": {
@@ -3768,6 +3822,27 @@
       "sha512": "sha512-wdKHvYstKILfGZj8u+aNtH2FIRpgvfUzhc9jKwT8kZOs4mwMTgehbusRlMuXnSrpY4pQTSpw37F2teF8gp18GA==",
       "path": "nuget.frameworks/4.7.0-preview1-4986",
       "hashPath": "nuget.frameworks.4.7.0-preview1-4986.nupkg.sha512"
+    },
+    "Serilog/2.7.2-dev-01005": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7SiMLTItWyIKZpbYoJP9YrdIiMqq2RWMYTzZb6NzD09PKEgJP4UA7ul5t5Z8/skmAU8GtiPPpo0yPUegdKWwDw==",
+      "path": "serilog/2.7.2-dev-01005",
+      "hashPath": "serilog.2.7.2-dev-01005.nupkg.sha512"
+    },
+    "Serilog.Extensions.Logging/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PYAkzUn/VV16Es7U06BfEhNZEltnYWu0WFCM4d2lLY/dvlA7xMwFXBuGRxR0XvEBPoOxPorjhFLy9txwiMO6rg==",
+      "path": "serilog.extensions.logging/2.0.2",
+      "hashPath": "serilog.extensions.logging.2.0.2.nupkg.sha512"
+    },
+    "Serilog.Sinks.File/4.0.1-dev-00796": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JuQGhrb1ejK9JJLgZ8B6Ef7Z6iwq6dHXaj1rOuBVTY3zz12Qg2w6YYTCxw4tvka2A8wOGz1C3ZCN4GmKtxpK7w==",
+      "path": "serilog.sinks.file/4.0.1-dev-00796",
+      "hashPath": "serilog.sinks.file.4.0.1-dev-00796.nupkg.sha512"
     },
     "System.Diagnostics.Process/4.1.0": {
       "type": "package",
