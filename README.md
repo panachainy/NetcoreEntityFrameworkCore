@@ -65,10 +65,8 @@ Delete Migration (ตัวล่าสุด)
 dotnet ef migrations remove
 ```
 
-## FIX SQL SERVER
-
-
-* [SQLSERVER 2008](https://blogs.msdn.microsoft.com/walzenbach/2010/04/14/how-to-enable-remote-connections-in-sql-server-2008/) - Fix Remote Local
+## Git
+.gitignore - Cool
 
 ## Contact ME
 * [Medium](https://medium.com/@panachai.ny) - Blog
