@@ -13,11 +13,11 @@ namespace NetCore_webapi_efcore.Controllers
     public class EmployeesController : Controller
     {
 
-        ILogger<EmployeesController> _logger;
+        private readonly ILogger _logger;
 
-        public EmployeesController(ILogger<EmployeesController> logger)
+        public EmployeesController(ILoggerFactory logger)
         {
-            _logger = logger;
+             _logger = logger.CreateLogger<EmployeesController>();
         }
 
         [HttpGet]
