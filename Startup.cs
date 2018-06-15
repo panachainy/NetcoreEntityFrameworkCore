@@ -37,19 +37,10 @@ namespace NetCore_webapi_efcore
             var logFile = Path.Combine(env.ContentRootPath, "mylogfile.txt");
             //create log file
             Log.Logger = new LoggerConfiguration().WriteTo.File(logFile).CreateLogger();
-            //-----------------
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
             loggerFactory.AddSerilog();
             //-----------------
-
-            // var starterlog = loggerFactory.CreateLogger<Startup>();
-            // starterlog.LogCritical("asd");
-            // starterlog.LogDebug("sdsd");
-            // starterlog.LogError("Asda");
-            // starterlog.LogInformation("Sdsd");
-            // starterlog.LogWarning("Asdasd");
-            //--
 
             if (env.IsDevelopment())
             {

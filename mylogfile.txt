@@ -1,20 +1,71 @@
-2018-06-14 21:12:51.970 +07:00 [FTL] asd
-2018-06-14 21:12:51.986 +07:00 [ERR] Asda
-2018-06-14 21:12:51.988 +07:00 [INF] Sdsd
-2018-06-14 21:12:51.990 +07:00 [WRN] Asdasd
-2018-06-14 21:12:52.695 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
-2018-06-14 21:12:52.748 +07:00 [INF] Request finished in 41.4552ms 307 
-2018-06-14 21:12:52.777 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
-2018-06-14 21:12:53.169 +07:00 [INF] Request finished in 216.4277ms 404 
-2018-06-14 21:15:55.427 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
-2018-06-14 21:15:55.501 +07:00 [INF] Request finished in 45.1867ms 307 
-2018-06-14 21:15:55.512 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
-2018-06-14 21:15:55.683 +07:00 [INF] Request finished in 147.8666ms 404 
-2018-06-14 21:16:04.573 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/values  
-2018-06-14 21:16:04.668 +07:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing action NetCore_webapi_efcore.Controllers.ValuesController.Get (NetCore_webapi_efcore)
-2018-06-14 21:16:04.682 +07:00 [INF] Executing action method NetCore_webapi_efcore.Controllers.ValuesController.Get (NetCore_webapi_efcore) - Validation state: "Valid"
-2018-06-14 21:16:08.795 +07:00 [INF] Getting all Departments at "2018-06-14T21:16:08.7912002+07:00"
-2018-06-14 21:16:09.336 +07:00 [INF] Executed action method NetCore_webapi_efcore.Controllers.ValuesController.Get (NetCore_webapi_efcore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4646.0828ms.
-2018-06-14 21:16:09.348 +07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCore_webapi_efcore.Models.DB.Departments, NetCore_webapi_efcore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
-2018-06-14 21:16:09.448 +07:00 [INF] Executed action NetCore_webapi_efcore.Controllers.ValuesController.Get (NetCore_webapi_efcore) in 4766.0043000000005ms
-2018-06-14 21:16:09.456 +07:00 [INF] Request finished in 4885.9248ms 200 application/json; charset=utf-8
+2018-06-15 23:18:04.270 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2018-06-15 23:18:04.349 +07:00 [INF] Request finished in 82.8656ms 307 
+2018-06-15 23:18:04.372 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2018-06-15 23:18:04.500 +07:00 [INF] Request finished in 122.8091ms 404 
+2018-06-15 23:18:12.959 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Employees  
+2018-06-15 23:18:12.991 +07:00 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing action NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore)
+2018-06-15 23:18:13.006 +07:00 [INF] Executing action method NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore) - Validation state: "Valid"
+2018-06-15 23:18:13.014 +07:00 [ERR] Failed to execute GET
+2018-06-15 23:18:13.020 +07:00 [INF] Executed action method NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.4031ms.
+2018-06-15 23:18:13.028 +07:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2018-06-15 23:18:13.037 +07:00 [INF] Executed action NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore) in 41.3928ms
+2018-06-15 23:18:13.042 +07:00 [INF] Request finished in 84.24ms 200 text/plain; charset=utf-8
+2018-06-15 23:18:39.510 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Employees  
+2018-06-15 23:18:39.515 +07:00 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing action NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore)
+2018-06-15 23:18:39.519 +07:00 [INF] Executing action method NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore) - Validation state: "Valid"
+2018-06-15 23:18:39.522 +07:00 [ERR] Failed to execute GET
+2018-06-15 23:18:39.525 +07:00 [INF] Executed action method NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.6495ms.
+2018-06-15 23:18:39.531 +07:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2018-06-15 23:18:39.536 +07:00 [INF] Executed action NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore) in 15.961200000000002ms
+2018-06-15 23:18:39.542 +07:00 [INF] Request finished in 33.0648ms 200 text/plain; charset=utf-8
+2018-06-15 23:19:41.743 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2018-06-15 23:19:41.789 +07:00 [INF] Request finished in 60.673ms 307 
+2018-06-15 23:19:41.819 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2018-06-15 23:19:41.963 +07:00 [INF] Request finished in 133.4398ms 404 
+2018-06-15 23:19:46.771 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Employees  
+2018-06-15 23:19:46.804 +07:00 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing action NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore)
+2018-06-15 23:19:46.818 +07:00 [INF] Executing action method NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore) - Validation state: "Valid"
+2018-06-15 23:19:46.826 +07:00 [ERR] Failed to execute GET
+2018-06-15 23:19:46.832 +07:00 [INF] Executed action method NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.3571ms.
+2018-06-15 23:19:46.842 +07:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2018-06-15 23:19:46.849 +07:00 [INF] Executed action NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore) in 40.17ms
+2018-06-15 23:19:46.855 +07:00 [INF] Request finished in 87.862ms 200 text/plain; charset=utf-8
+2018-06-15 23:20:01.625 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Employees  
+2018-06-15 23:20:01.630 +07:00 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing action NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore)
+2018-06-15 23:20:01.642 +07:00 [INF] Executing action method NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore) - Validation state: "Valid"
+2018-06-15 23:20:01.649 +07:00 [ERR] Failed to execute GET
+2018-06-15 23:20:01.661 +07:00 [INF] Executed action method NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.7692000000000005ms.
+2018-06-15 23:20:01.665 +07:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2018-06-15 23:20:01.682 +07:00 [INF] Executed action NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore) in 34.7265ms
+2018-06-15 23:20:01.694 +07:00 [INF] Request finished in 63.0692ms 200 text/plain; charset=utf-8
+2018-06-15 23:20:39.465 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2018-06-15 23:20:39.504 +07:00 [INF] Request finished in 49.9873ms 307 
+2018-06-15 23:20:39.539 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2018-06-15 23:20:39.673 +07:00 [INF] Request finished in 126.9477ms 404 
+2018-06-15 23:20:43.864 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Employees  
+2018-06-15 23:20:43.896 +07:00 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing action NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore)
+2018-06-15 23:20:43.914 +07:00 [INF] Executing action method NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore) - Validation state: "Valid"
+2018-06-15 23:20:43.921 +07:00 [ERR] Failed to execute GET
+2018-06-15 23:20:43.928 +07:00 [INF] Executed action method NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.8828ms.
+2018-06-15 23:20:43.937 +07:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2018-06-15 23:20:43.946 +07:00 [INF] Executed action NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore) in 43.249700000000004ms
+2018-06-15 23:20:43.951 +07:00 [INF] Request finished in 90.6048ms 200 text/plain; charset=utf-8
+2018-06-15 23:20:50.761 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Employees  
+2018-06-15 23:20:50.765 +07:00 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing action NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore)
+2018-06-15 23:20:50.769 +07:00 [INF] Executing action method NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore) - Validation state: "Valid"
+2018-06-15 23:20:50.772 +07:00 [ERR] Failed to execute GET
+2018-06-15 23:20:50.775 +07:00 [INF] Executed action method NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.4569ms.
+2018-06-15 23:20:50.778 +07:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2018-06-15 23:20:50.781 +07:00 [INF] Executed action NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore) in 13.3314ms
+2018-06-15 23:20:50.785 +07:00 [INF] Request finished in 24.373ms 200 text/plain; charset=utf-8
+2018-06-15 23:23:38.099 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2018-06-15 23:23:38.160 +07:00 [INF] Request finished in 73.0659ms 307 
+2018-06-15 23:23:38.187 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2018-06-15 23:23:38.327 +07:00 [INF] Request finished in 126.9301ms 404 
+2018-06-15 23:23:44.031 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/Employees  
+2018-06-15 23:23:44.061 +07:00 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing action NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore)
+2018-06-15 23:23:44.073 +07:00 [INF] Executing action method NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore) - Validation state: "Valid"
+2018-06-15 23:23:44.671 +07:00 [INF] Executed action method NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 589.9505ms.
+2018-06-15 23:23:44.681 +07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCore_webapi_efcore.Models.DB.Employees, NetCore_webapi_efcore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-06-15 23:23:44.744 +07:00 [INF] Executed action NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore) in 677.4536ms
+2018-06-15 23:23:44.750 +07:00 [INF] Request finished in 720.6659ms 200 application/json; charset=utf-8

@@ -17,7 +17,7 @@ namespace NetCore_webapi_efcore.Controllers
 
         public EmployeesController(ILoggerFactory logger)
         {
-             _logger = logger.CreateLogger<EmployeesController>();
+            _logger = logger.CreateLogger<EmployeesController>();
         }
 
         [HttpGet]
@@ -25,8 +25,10 @@ namespace NetCore_webapi_efcore.Controllers
         {
             try
             {
-                // _logger.LogDebug("test log get");
-                return Ok("asdasd");
+                using (TrainWebAPIContext db = new TrainWebAPIContext())
+                {
+                    return Ok(db.Employees.ToList());
+                }
             }
             catch (Exception)
             {
