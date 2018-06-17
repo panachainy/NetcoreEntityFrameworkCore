@@ -69,3 +69,34 @@
 2018-06-15 23:23:44.681 +07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCore_webapi_efcore.Models.DB.Employees, NetCore_webapi_efcore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
 2018-06-15 23:23:44.744 +07:00 [INF] Executed action NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore) in 677.4536ms
 2018-06-15 23:23:44.750 +07:00 [INF] Request finished in 720.6659ms 200 application/json; charset=utf-8
+2018-06-17 23:33:46.035 +07:00 [FTL] Unable to start Kestrel.
+System.IO.IOException: Failed to bind to address https://127.0.0.1:5001: address already in use. ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted ---> System.Net.Sockets.SocketException: Only one usage of each socket address (protocol/network address/port) is normally permitted
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransport.BindAsync()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransport.BindAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass22_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2018-06-17 23:38:27.716 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/  
+2018-06-17 23:38:27.748 +07:00 [WRN] Failed to determine the https port for redirect.
+2018-06-17 23:38:27.887 +07:00 [INF] Request finished in 180.7122ms 404 
+2018-06-17 23:38:43.668 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/api  
+2018-06-17 23:38:43.669 +07:00 [INF] Request finished in 0.4412ms 404 
+2018-06-17 23:38:48.737 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/api/Employees  
+2018-06-17 23:38:48.758 +07:00 [INF] Route matched with {action = "Get", controller = "Employees"}. Executing action NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore)
+2018-06-17 23:38:48.777 +07:00 [INF] Executing action method NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore) - Validation state: "Valid"
+2018-06-17 23:38:49.165 +07:00 [INF] Executed action method NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 379.3647ms.
+2018-06-17 23:38:49.171 +07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NetCore_webapi_efcore.Models.DB.Employees, NetCore_webapi_efcore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-06-17 23:38:49.232 +07:00 [INF] Executed action NetCore_webapi_efcore.Controllers.EmployeesController.Get (NetCore_webapi_efcore) in 470.3514ms
+2018-06-17 23:38:49.235 +07:00 [INF] Request finished in 498.0333ms 200 application/json; charset=utf-8
+2018-06-17 23:38:49.507 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5050/favicon.ico  
+2018-06-17 23:38:49.507 +07:00 [INF] Request finished in 0.3417ms 404 
